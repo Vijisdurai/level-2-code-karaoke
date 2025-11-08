@@ -25,8 +25,16 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 
 # CODE:
-
+```
+arr = [1,4,3]
+target= 5
+for i in range(len(arr)):
+    if target - arr[i] in arr:
+        print({i, arr.index(target - arr[i])})
+        break
+```
 # OUTPUT:
+<img width="1692" height="54" alt="image" src="https://github.com/user-attachments/assets/a75b779f-7332-4b73-8fff-62f6584dd23f" />
 
 
 # Question 2:
@@ -49,5 +57,11 @@ Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 
 # CODE:
-
+```
+def fun(x):
+    return str(x) == str(x)[::-1]
+print(fun(121))
+print(fun(12))
+```
 # OUTPUT:
+<img width="1690" height="76" alt="image" src="https://github.com/user-attachments/assets/10502aab-4be4-4634-a9dc-9b717abc8c24" />
